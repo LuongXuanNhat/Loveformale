@@ -1,7 +1,7 @@
 const CONFIG = {
     introTitle: 'Em ơi ~',
     introDesc: `Những lời sau đây anh bày tỏ là những lời mà anh đã cất giấu trong tim này bấy lâu. 
-                Anh hãy trả lời thật lòng nhé :3`,
+                Em hãy trả lời thật lòng nhé :3`,
     btnIntro: 'Hihi okii',
     title: 'Giá như anh là nhà thơ anh sẽ tặng riêng em những vần thơ cháy bỏng. Nếu được là nhạc sĩ, anh sẽ viết tặng em những bản tình ca bất tận. Nếu là một lập trình viên anh sẽ viết nên những đoạn code ngập tràn hương vị của tình yêu', 
     desc: '"Và giá như anh có thể anh sẽ làm tất cả vì em. Làm người yêu anh nhé <3 ! Babe ❤️"',
