@@ -15,9 +15,8 @@ function init(){
     $('#desc').text(CONFIG.desc)
     $('#yes').text(CONFIG.btnYes)
     $('#no').text(CONFIG.btnNo)
-    //$('#vang').text(CONFIG.btnIntro)
+    $('#vang').text(CONFIG.btnIntro)
 }
-
 function firstQuestion() {
     $('.content').hide();
     Swal.fire({
@@ -31,22 +30,23 @@ function firstQuestion() {
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
-        $('.content').show(200);
+        
+        $('.content').show(500);
       })
 }
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('sound/duck.mp3');
+    var audio = new Audio('sound/hongbeoi.mp3');
     audio.play();
-    var leftNo = $('#no').css("left");
-    var topNO = $('#no').css("top");
-    var leftY = $('#yes').css("left");
-    var topY = $('#yes').css("top");
-    $('#no').css("left", leftY);
-    $('#no').css("top", topY);
-    $('#yes').css("left", leftNo);
-    $('#yes').css("top", topNO);
+    // var leftNo = $('#no').css("left");
+    // var topNO = $('#no').css("top");
+    // var leftY = $('#yes').css("left");
+    // var topY = $('#yes').css("top");
+    // $('#no').css("left", leftY);
+    // $('#no').css("top", topY);
+    // $('#yes').css("left", leftNo);
+    // $('#yes').css("top", topNO);
 }
 // move random button póition
 function moveButton() {
@@ -96,11 +96,10 @@ function textGenerate() {
     setTimeout("textGenerate()", 1);
 }
 // click vang
-//$('#vang').click(function () ) {
-//    var audio = new Audio('sound/sound.mp3');
-//    audio.play();
-//}
-// show popup
+$('#vang').click(function ()  {
+   var audio = new Audio('sound/Magic.mp3');
+   audio.play();
+})
 $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
@@ -113,12 +112,10 @@ $('#yes').click(function() {
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Tò mò quá'>",
         background: '#fff url("img/iput-bg2.png")',
-        backdrop: `
-              rgba(255,31,142,0.4)
-              url("img/06.gif")
-              center bottom
-              no-repeat            
-            `,
+        // backdrop: `
+        //       rgba(255,31,142,0.4)
+        //       no-repeat            
+            // `,
         confirmButtonColor: '#3085d6',
         confirmButtonColor: '#fe8a71',
         confirmButtonText: CONFIG.btnReply
@@ -138,4 +135,3 @@ $('#yes').click(function() {
         }
     })
 })
-

@@ -19,7 +19,9 @@
 	font-size: 15px;
 	margin-left:-25px;
 }
-
+ /* Loading */
+ 
+ /* Het loading */
 .spinner > div {
 	background-color: #ffffff ;
 	height: 100%;
